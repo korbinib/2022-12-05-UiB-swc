@@ -267,7 +267,7 @@ Please register before November 30.
 </p>
 
 <p class="text-center">
-  <a href="https://nettskjema.no/a/222739">
+  <a href="https://nettskjema.no/a/scw-bergen2022">
     <button type="button" class="btn btn-info">Please sign up here</button>
   </a>
 </p>
