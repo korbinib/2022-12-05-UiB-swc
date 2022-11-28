@@ -267,7 +267,7 @@ Please register before November 30.
 </p>
 
 <p class="text-center">
-  <a href="https://nettskjema.no/a/222739">
+  <a href="https://nettskjema.no/a/scw-bergen2022">
     <button type="button" class="btn btn-info">Please sign up here</button>
   </a>
 </p>
@@ -354,7 +354,16 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-{% include online-swc-schedule.html %}
+{% if site.carpentry == "swc" %}
+{% include swc/schedule.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/schedule.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/schedule.html %}
+{% elsif site.carpentry == "incubator" %}
+This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
+Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
+{% endif %}
 
 
 <hr/>
